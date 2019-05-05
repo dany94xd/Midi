@@ -4,7 +4,7 @@ const cors = require('cors');
 const app = express();
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3500;
 const mongodb = require('./database');
 
 console.log('Port:', port);
