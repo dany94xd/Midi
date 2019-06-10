@@ -1,9 +1,14 @@
+
 <div class="fondo">
 	
 	<nav  id="menu" class="nav">
+			<!-- <a  href="#" title="" routerLink="/inicio"><img src="../assets/img/midi.png" alt="Logotipo de HTML5" width="200" height="200"></a> -->
+
 		<ul>
 			<li>
-				<a  href="#" title="" routerLink="/inicio"><span  class="icon"> <i aria-hidden="true"  class="icon-home"></i></span><span>Inicio</span></a>
+					<a  href="#" title="" routerLink="/inicio"><img src="../assets/img/LOGOMIIDI.png" alt="Logotipo de HTML5" width="200" height="150"></a>
+
+				<!-- <span  class="icon"> <i aria-hidden="true"  class="icon-home"></i></span><span>Inicio</span></a> -->
 			</li>
 			<li>		
 				<a *ngIf="usserLogged!=undefined" href="#" routerLink="/juegos" title=""><span class="icon"> <i aria-hidden="true" class="icon-portfolio"></i></span><span>Productos</span></a>	
@@ -31,35 +36,21 @@
 		</ul>
 	</nav>
 	<div id="menu1" class="col-md-12">
-		<div class="row">
-			<div class="col-md-10 router">
+		
+
 				<router-outlet></router-outlet>
-			</div>
-			<div class="col-md-2 logos">
-					<img class="logoespol" src="../assets/img/espol.png" alt=""><br>
-					<img class="logoespol" src="../assets/img/edcom.png" alt=""><br>
-					<img class="logoespol" src="../assets/img/midi.png" alt=""><br>
-					<img class="logoespol" src="../assets/img/uvs.png" alt="">
-					
-			</div>
-		</div>
+			
+		
+			<footer>
+				<div class="row footer">
+					<div class="col-md-4 "><img class="logoespol" src="../assets/img/espol.png" alt="">	</div>
+					<div class="col-md-4"><img src="../assets/img/uvs.png" alt=""></div>
+					<div class="col-md-4"><img src="../assets/img/logo_superior.png" alt=""></div>
+				</div>
+			</footer>
+
 	</div>
-	<footer>
-		<div class="row footer">
-				<div class="col-md-4 ">
-						<img src="../assets/img/midi.png" alt="">
-					</div>
-			<div class="col-md-4 ">
-				<img class="logoespol" src="../assets/img/espol.png" alt="">
-			</div>
-			<div class="col-md-4">
-				<img src="../assets/img/uvs.png" alt="">
-			</div>
-			<div class="col-md-4">
-				<img src="../assets/img/edcom.png" alt="">
-			</div>
-		</div>
-	</footer>
+	
 </div>
 
 

@@ -2,6 +2,25 @@
     padding:  30px
 }
 
+
+.mencionContacto h1{
+    text-align: center;
+    color: white;
+}
+
+
+.circular--square {
+    border-radius: 50%;
+    padding-bottom: 10px;
+  }
+
+  .circular--square {
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+  }
+
 .design{
     padding: 10px !important;
     background: rgb(27, 54, 71);

@@ -26,6 +26,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SliderModule } from 'angular-image-slider';
 import { EncuestaAdminComponent } from './components/encuesta-admin/encuesta-admin.component';
 import { RestoreComponent } from './components/user/restore/restore.component';
+//import {RecaptchaModule , RECAPTCHA_SETTINGS ,RecaptchaSettings} from 'ng-recaptcha';
+//import { RecaptchaFormsModule} from 'ng-recaptcha/forms'
+
 
 
 @NgModule({
@@ -56,9 +59,21 @@ import { RestoreComponent } from './components/user/restore/restore.component';
     HttpClientModule,
      BrowserAnimationsModule,
     SliderModule
+    //RecaptchaModule,
+    //RecaptchaFormsModule
 
   ],
+
+
   providers: [ModalService],
   bootstrap: [AppComponent]
+  // providers: [{
+  //  // ModalService
+  //  provide:RECAPTCHA_SETTINGS,
+  //  useValue:{
+  //    siteKey:'', 
+  //  } as RecaptchaSettings
+  // }],
+  // bootstrap: [AppComponent]
 })
 export class AppModule { }

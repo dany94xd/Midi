@@ -1,12 +1,13 @@
 .centrado{
     align-content: center;
-    padding: 50px;
+    padding: 0px;
     color:white;
-    font-size: 18px;
+    font-size: 14px;
+    width: 100%;
 }
 
 .fuente{
-    font-size: 18px;   
+    font-size: 14px;   
     text-align: justify;
     text-justify: inter-word;
 }
