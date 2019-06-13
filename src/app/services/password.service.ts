@@ -7,7 +7,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class PasswordService {
 
 
-  url: string = 'http://localhost:3000/auth/restorePassword';
+  url: string = 'http://200.10.147.68:3002/auth/restorePassword';
 
   constructor(private http: HttpClient) { }
 

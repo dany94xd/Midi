@@ -11,7 +11,7 @@ export class UserService {
   
     selectedUser: User;
     users: User[];
-    readonly URL_API = 'http://localhost:3000/user';
+    readonly URL_API = 'http://200.10.147.68:3002/user';
   
 
   constructor(private http: HttpClient) {

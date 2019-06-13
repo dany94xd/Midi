@@ -7,6 +7,9 @@ const bodyParser = require('body-parser');
 const port = process.env.PORT || 3500;
 const mongodb = require('./database');
 
+//path comentar para ejecutar por separado
+var path = require('path');
+//
 console.log('Port:', port);
 
 
@@ -34,7 +37,13 @@ app.set('port', port);
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(bodyParser.json());
-app.use(cors({origin: '/dist/proyectoscrum'}));
+
+//comentar esta linea para ejecutar por separado
+app.use('/',express.static('../client',{redirect:false}));
+
+//
+
+app.use(cors({origin: 'http://200.10.147.68'}));
 app.use(function (req, res, next) {
 
     res.header("Access-Control-Allow-Origin", "*");
@@ -48,6 +57,12 @@ app.use('/auth',require('./routes/auth.routes'));
 app.use('/lineagrafica',require('./routes/lineagrafica.routes'));
 app.use('/encuesta',require('./routes/encuesta.routes.js'));
 
+// Para ejecutarlo separada comentar esta 3 lineas
+app.get('*',function(req,res,next){
+  res.sendFile(path.resolve('../client/index.html'))
+});
+
+///////////////////////
 //Starting the server
 app.listen(app.get('port'), () => {
     console.log('Server on port ' + port);

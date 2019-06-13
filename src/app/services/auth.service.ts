@@ -22,18 +22,18 @@ export class AuthService {
 });
 
 registerUser(user: any) {
-  const url_api = "http://localhost:3000/auth/register";
+  const url_api = "http://200.10.147.68:3002/auth/register";
 
   return this.http.post(url_api, user);
 }
 
 loginuser(email: string, password: string): Observable<any> {
-  const url_api = "http://localhost:3000/auth/login";
+  const url_api = "http://200.10.147.68:3002/auth/login";
   return this.http.post(url_api, {email, password});
 }
 
 passwordUser(password: any) {
-  const url_api = "http://localhost:3000/auth/changePass";
+  const url_api = "http://200.10.147.68:3002/auth/changePass";
   
   return this.http.post(url_api, password);
 }

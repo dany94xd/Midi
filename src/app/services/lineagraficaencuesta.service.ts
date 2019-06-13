@@ -8,7 +8,7 @@ import { Lineagrafica } from '../models/lineagrafica';
 export class LineagraficaencuestaService {
   selectedLineagrafica: Lineagrafica;
   lineagraficas: Lineagrafica[];
-  readonly URL_API = 'http://localhost:3000/lineagrafica';
+  readonly URL_API = 'http://200.10.147.68:3002/lineagrafica';
 
   constructor(private http: HttpClient) {
       this.selectedLineagrafica = new Lineagrafica();

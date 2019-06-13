@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const URI = 'mongodb://localhost/crud-midi';
+const URI = 'mongodb://localhost/crud2';
 
 mongoose.connect(URI, { useNewUrlParser: true })
     .then(db => console.log('DB is connected'))

@@ -57,7 +57,7 @@ authCtrl.restorePassword = async (req, res) => {
     let codigoRestauracion = Math.random().toString(36).replace('0.', '') ;
 
     let email = req.body.email;
-    let body = "http://localhost:4200/restore/"+codigoRestauracion;
+    let body = "http://200.10.147.68:4200/restore/"+codigoRestauracion;
     let asunto = 'Cambio de contraseña';
       
     let user = await User.findOne({email: req.body.email});

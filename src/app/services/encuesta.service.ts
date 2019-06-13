@@ -8,7 +8,7 @@ import { EncuestaComponent } from '../components/encuesta/encuesta.component';
 export class EncuestaService {
   selectedEncuesta: Encuesta;
   encuestas: Encuesta[];
-  readonly URL_API = 'http://localhost:3000/encuesta';
+  readonly URL_API = 'http://200.10.147.68:3002/encuesta';
 
   constructor(private http: HttpClient) {
     this.selectedEncuesta = new Encuesta();
