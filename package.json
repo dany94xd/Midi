@@ -32,7 +32,7 @@
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "jquery": "^3.4.0",
-    "mongoose": "^5.4.14",
+    "mongoose": "^5.7.5",
     "morgan": "^1.9.1",
     "nodemailer": "^5.1.1",
     "popper.js": "^1.15.0",
